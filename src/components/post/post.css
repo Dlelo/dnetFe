@@ -38,8 +38,6 @@
     font-size: 12px;
 }
 
-.postTopRight {}
-
 .postCenter {
     margin: 20px 0;
 }
@@ -72,8 +70,6 @@
 .postlikeCounter {
     font-size: 15px;
 }
-
-.postBottomRight {}
 
 .postCommentText {
     cursor: pointer;

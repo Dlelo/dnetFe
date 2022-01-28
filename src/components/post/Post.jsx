@@ -1,33 +1,36 @@
 import React from 'react';
 import "./post.css"
-import {MoreVert, Favorite, ThumbUp} from '@mui/icons-material'
+import {MoreVert, Favorite, ThumbUp} from '@mui/icons-material';
+import {Users} from "../../dummydata"
 
-export default function Post() {
+export default function Post({post}) {
   return (
   <div className='post'>
     <div className="postWrapper">
         <div className="postTop">
             <div className="postTopLeft">
-                <img className='postProfileImg' src="assets/person/1.jpeg" alt=""/>
-                <span className='postUsername'>David kita</span>
-                <span className='postDate'>5 mins ago</span>
+                <img className='postProfileImg' src={Users.filter((u)=> u.id === post.userID)[0].profilePicture} alt=""/>
+                <span className='postUsername'>
+                    {Users.filter((u)=> u.id === post.userID)[0].username}
+                    </span>
+                <span className='postDate'>{post.date}</span>
             </div>
             <div className="postTopRight">
                 <MoreVert/>
             </div>
         </div>
         <div className="postCenter">
-            <span className="postText">Hey this is my first</span>
-            <img className='postImage' src="assets/post/1.jpeg" alt="" />
+            <span className="postText">{post.desc}</span>
+            <img className='postImage' src={post.photo} alt="" />
         </div>
         <div className="postBottom">
             <div className="postBottomLeft">
                 <Favorite className='likeIcon'/>
                 <ThumbUp className='likeIcon'/>
-                <span className="postlikeCounter">32 likes</span>
+                <span className="postlikeCounter">{post.like}likes</span>
             </div>
             <div className="postBottomRight">
-                <span className="postCommentText">9 Comments</span>
+                <span className="postCommentText">{post.comment} Comments</span>
             </div>
         </div>
     </div>
