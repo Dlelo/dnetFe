@@ -1,0 +1,83 @@
+.rightbar {
+    flex: 3
+}
+
+.rightbarWrapper {
+    padding: 20px 20px 0 0;
+}
+
+.anniversaryContainer {
+    display: flex;
+    align-items: center;
+}
+
+.anniversaryImg {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.anniversaryTag {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.rightbarAd {
+    width: 100%;
+    border-radius: 2px;
+    margin: 30px 0;
+}
+
+.rightbarTitle {
+    margin-bottom: 20px;
+}
+
+.rightbarfollowList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.rightbarfollow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.rightbarProfileImgContainer {
+    margin: 10px 10px;
+    position: relative;
+    font-size: 14px;
+}
+
+.rightbarProfileImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: left;
+    margin-right: 2px;
+}
+
+.rightbarUsername {
+    font-weight: 500;
+    margin-left: 2px;
+}
+
+.rightbarCategoryContainer {
+    margin-left: 20px;
+    color: grey;
+    font-size: 14px;
+}
+
+.rightbarFollowButton {
+    margin: 2px 2px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 5px;
+    color: black;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 14px;
+}
